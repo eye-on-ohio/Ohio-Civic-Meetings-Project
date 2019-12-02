@@ -52,10 +52,10 @@ FEED_STORAGES = {
 # S3_BUCKET = os.getenv("S3_BUCKET")
 # CITY_SCRAPERS_STATUS_CONTAINER = S3_BUCKET
 
-# AZURE_ACCOUNT_NAME = os.getenv("AZURE_ACCOUNT_NAME")
-# AZURE_ACCOUNT_KEY = os.getenv("AZURE_ACCOUNT_KEY")
-# AZURE_CONTAINER = os.getenv("AZURE_CONTAINER")
-# CITY_SCRAPERS_STATUS_CONTAINER = AZURE_CONTAINER
+AZURE_ACCOUNT_NAME = os.getenv("AZURE_ACCOUNT_NAME")
+AZURE_ACCOUNT_KEY = os.getenv("AZURE_ACCOUNT_KEY")
+AZURE_CONTAINER = os.getenv("AZURE_CONTAINER")
+CITY_SCRAPERS_STATUS_CONTAINER = AZURE_CONTAINER
 
 # Uncomment the FEED_URI for whichever provider you're using
 
@@ -63,7 +63,7 @@ FEED_STORAGES = {
 #     bucket=S3_BUCKET
 # )
 
-# FEED_URI = (
+FEED_URI = (
 #     "azure://{account_name}:{account_key}@{container}"
 #     "/%(year)s/%(month)s/%(day)s/%(hour_min)s/%(name)s.json"
 # ).format(
